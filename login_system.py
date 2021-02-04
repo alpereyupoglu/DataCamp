@@ -17,9 +17,10 @@ def olduser():
         login_info = line.split()
         if username == login_info[0] and passw == login_info[1]:
             print("Username is correct!")
-            return True
-    print("Wrong username or password!")
-    return False
+            break
+        else:
+            print("Wrong username or password!")
+            return False
 
 
 def newuser():
